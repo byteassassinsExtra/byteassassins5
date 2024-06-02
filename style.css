@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://garudaxyzz.github.io/byteassassins5/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: transparent;
+  border-radius: 10%;
+  box-shadow: 0 0 0px black;
+  filter: blur(20px);
+  position: absolute;
+  top: 10%;
+}
+
+.byte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#byteImage {
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 40px black;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-shadow: 1px 1px red, -1px -1px red, 1px -1px red, -1px 1px red, 3px 3px 6px red;
+}
+
+.gif-container {
+  margin: 20px 0;
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.secondcontainer {
+  margin-bottom: 50px;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px purple, -1px -1px purple, 1px -1px purple, -1px 1px purple, 3px 3px 7px purple;
+}
+
+.para {
+  margin-bottom: 30px;
+}
+
+.clock {
+  margin-bottom: 20px;
+}
+
+.hover-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border-radius: 50%;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .gif-container {
+    margin: 10px 0;
+  }
+
+  .secondcontainer {
+    margin-bottom: 30px;
+  }
+}
