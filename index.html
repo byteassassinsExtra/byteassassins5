@@ -1,34 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hacked by byteassassins</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Hacked By HackSageX</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      background: black;
+      color: red;
+    }
+
+    .video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      opacity: 0.5;
+      object-fit: cover;
+    }
+
+    .top-banner {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: clamp(1.5em, 5vw, 3em);
+      font-weight: bold;
+      padding: 0 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .seizure-reason {
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      text-align: center;
+      font-size: clamp(1em, 3vw, 1.5em);
+      padding: 0 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      line-height: 1.4;
+    }
+
+    .emblem {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: clamp(120px, 30vw, 180px);
+      filter: drop-shadow(0 0 6px white) contrast(200%);
+    }
+
+    .bottom-content {
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .warning {
+      font-size: clamp(1.2em, 4vw, 2em);
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .quote {
+      font-size: clamp(0.9em, 3vw, 1.2em);
+      line-height: 1.6em;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .clock {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: clamp(1.2em, 4vw, 1.8em);
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .bottom-content {
+        bottom: 120px;
+      }
+      
+      .clock {
+        bottom: 40px;
+      }
+
+      .emblem {
+        width: clamp(100px, 25vw, 150px);
+      }
+
+      .seizure-reason {
+        top: 80px;
+      }
+    }
+
+    @media (max-height: 600px) {
+      .emblem {
+        width: clamp(80px, 20vw, 120px);
+      }
+      
+      .bottom-content {
+        bottom: 60px;
+      }
+
+      .top-banner {
+        top: 10px;
+      }
+
+      .seizure-reason {
+        top: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .top-banner {
+        font-size: clamp(1.2em, 4vw, 2em);
+      }
+
+      .warning {
+        font-size: clamp(1em, 3vw, 1.5em);
+      }
+
+      .quote {
+        font-size: clamp(0.8em, 2.5vw, 1em);
+      }
+
+      .seizure-reason {
+        font-size: clamp(0.8em, 2.5vw, 1.2em);
+      }
+    }
+  </style>
 </head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="bv.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-<body id="aa" align="center">
-  <div class="box"></div>
-
-  <div class="byte" align="center">
-    <img id="byteImage" src="byte.jpg" height="210px" width="210px" class="hover-image">
+  <div class="top-banner">HACKED BY 🇮🇳 HACKERS</div>
+  
+  <div class="seizure-reason">
+    THIS WEBSITE HAS BEEN SEIZED FOR VIOLATING CYBER SECURITY LAWS<br>
+    AND COMPROMISING NATIONAL SECURITY INTERESTS
   </div>
 
-  <div class="container" align="center">
-    <h1>HACKED BY BYTEASSASSINS</h1>
-  </div>
+  <img class="emblem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/800px-Emblem_of_India.svg.png" alt="Emblem of India" />
 
-  <div class="gif-container" align="center">
-    <img src="flag.gif" alt="Flag" class="center-image">
-  </div>
-
-  <div class="secondcontainer" align="center">
-    <h1>WARNING!</h1>
-  </div>
-
-  <div class="para" align="center">
-    <p>THEY THINK WE ARE HIDING IN THE SHADOW WE ARE THE SHADOWS TEAM-BYTEASSASSINS</p>
+  <div class="bottom-content">
+    <div class="warning">WARNING !</div>
+    <div class="quote">
+      THEY THINK WE ARE HIDING IN THE SHADOW, BUT WE ARE THE SHADOWS <BR>
+      INVISIBLE WARRIORS, INVINCIBLE NATION 🇮🇳    </div>
   </div>
 
   <div class="clock" align="center">
@@ -46,5 +182,4 @@
       doodle.init("https://byteassassinsextra.github.io/byteassassins5/jet.png");
   </script>
 </body>
-
 </html>
