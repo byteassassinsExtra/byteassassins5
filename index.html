@@ -13,8 +13,8 @@
       font-family: 'Courier New', Courier, monospace;
       background: black;
       color: red;
+      cursor: url('data:image/svg+xml;utf8,<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><text y="20" font-size="20" fill="lime">></text></svg>'), auto;
     }
-
 
     .top-banner {
       position: absolute;
@@ -48,12 +48,13 @@
     }
 
     .bottom-content {
-      position: absolute;
-      bottom: 80px;
-      width: 100%;
-      text-align: center;
-      padding: 0 20px;
-    }
+  position: absolute;
+  bottom: 140px; /* was 80px */
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
 
     .warning {
       font-size: clamp(1.2em, 4vw, 2em);
@@ -82,10 +83,10 @@
       .bottom-content {
         bottom: 120px;
       }
-      
+
       .clock {
-        bottom: 40px;
-      }
+  bottom: 40px; /* was 20px */
+}
 
       .emblem {
         width: clamp(100px, 25vw, 150px);
@@ -100,7 +101,7 @@
       .emblem {
         width: clamp(80px, 20vw, 120px);
       }
-      
+
       .bottom-content {
         bottom: 60px;
       }
@@ -131,11 +132,25 @@
         font-size: clamp(0.8em, 2.5vw, 1.2em);
       }
     }
+
+    /* Glitch Animation */
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+      20% { text-shadow: -2px 0 lime, 2px 0 magenta; }
+      40% { text-shadow: 2px 2px yellow, -2px -2px blue; }
+      60% { text-shadow: -2px 2px red, 2px -2px lime; }
+      80% { text-shadow: 2px 0 cyan, -2px 0 red; }
+      100% { text-shadow: 0 0 4px white; }
+    }
+
+    .glitch {
+      animation: glitch 1s infinite alternate;
+    }
   </style>
 </head>
 <body>
 
-  <div class="top-banner">HACKED BY 🇮🇳 HACKERS</div>
+  <div class="top-banner glitch">HACKED BY 🇮🇳 HACKERS</div>
   
   <div class="seizure-reason">
     THIS WEBSITE HAS BEEN SEIZED FOR VIOLATING CYBER SECURITY LAWS<br>
@@ -145,25 +160,33 @@
   <img class="emblem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/800px-Emblem_of_India.svg.png" alt="Emblem of India" />
 
   <div class="bottom-content">
-    <div class="warning">WARNING !</div>
+    <div class="warning glitch">☠️ SYSTEM COMPROMISED ☠️
+    </div>
     <div class="quote">
-      THEY THINK WE ARE HIDING IN THE SHADOW, BUT WE ARE THE SHADOWS <BR>
-      INVISIBLE WARRIORS, INVINCIBLE NATION 🇮🇳    </div>
+      Your cybersecurity team is currently Googling 'how to stop Indian hackers 😂😂 <br>
+      INVISIBLE WARRIORS, INVINCIBLE NATION 🇮🇳
+    </div>
   </div>
 
   <div class="clock" align="center">
     <h1 id="clock"></h1>
   </div>
-  
+
   <audio id="byteAudio" src="byte.mp3" preload="auto" align="center"></audio>
 
   <script src="jet-planes/doodle.js"></script>
-
   <script src="script.js"></script>
-
   <script type="text/javascript" src="https://byteassassinsextra.github.io/byteassassins5/doodle.js"></script>
   <script type="text/javascript">
       doodle.init("https://byteassassinsextra.github.io/byteassassins5/jet.png");
+
+      // Simple digital clock
+      function updateClock() {
+        const now = new Date();
+        document.getElementById("clock").textContent = now.toLocaleTimeString();
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
   </script>
 </body>
 </html>
